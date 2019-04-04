@@ -204,7 +204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &103009256
 Transform:
   m_ObjectHideFlags: 0
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a5b6b455d594e90a0d0d19606a40fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectionMatrix: {fileID: 11400000, guid: 669381317efd04e9faa49e7db57c68a2, type: 2}
+  projectionMatrix: {fileID: 11400000, guid: b1e1ad63184188a42baaca97b9c0be7a, type: 2}
 --- !u!4 &123772476 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8847158947443316631, guid: 2e933b2feeb364d93a361d2ae8360341,
@@ -1081,7 +1081,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1118890194
 Transform:
   m_ObjectHideFlags: 0
@@ -1574,6 +1574,10 @@ PrefabInstance:
     - target: {fileID: 1824340380413090, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
       propertyPath: m_Name
       value: MaleFreeSimpleMovement1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824340380413090, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4549428611729446, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2494,7 +2498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2014259545
 Transform:
   m_ObjectHideFlags: 0
@@ -2647,13 +2651,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2071850513}
   - component: {fileID: 2071850514}
+  - component: {fileID: 2071850515}
   m_Layer: 0
   m_Name: Camera (1)
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2071850513
 Transform:
   m_ObjectHideFlags: 0
@@ -2710,6 +2715,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &2071850515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071850512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7603db46f35eb10418f20926fe9ffee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1188691043}
+  camera: {fileID: 2071850514}
 --- !u!1001 &1041065963208341887
 PrefabInstance:
   m_ObjectHideFlags: 0
